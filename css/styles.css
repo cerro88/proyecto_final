@@ -1,0 +1,27 @@
+/*genericos*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*menu de nav*/
+
+nav {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+li a {
+    text-decoration: none
+}
