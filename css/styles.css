@@ -14,23 +14,42 @@ body {
 
 nav {
     background-color: #000;
+    /* Establece el color de fondo a negro */
     border-bottom: 1px solid #fff;
+    /* Añade un borde inferior blanco de 1px */
     position: fixed;
+    /* Fija la barra de navegación en la parte superior de la ventana */
     text-align: center;
+    /* Centra el texto dentro de la barra de navegación */
     width: 100%;
+    /* Hace que la barra de navegación ocupe el 100% del ancho */
     top: 0;
+    /* Posiciona la barra en la parte superior de la ventana */
     z-index: 1000;
+    /* Establece la prioridad de la barra sobre otros elementos, asegurando que se superponga */
+    /*Significa que este elemento tiene una prioridad muy alta, 
+    por lo que se mostrará por encima de cualquier otro elemento 
+    que tenga un z-index inferior a 1000.
+    Es útil para cosas como menús de navegación fijos,
+    para que siempre queden visibles por encima del contenido de
+    la página, incluso cuando el usuario haga scroll o si hay 
+    otros elementos flotando en la página.*/
 }
 
 ul {
     display: flex;
+    /* Utiliza Flexbox para alinear y distribuir los elementos de la lista */
     justify-content: space-around;
+    /* Distribuye los elementos hijos de manera uniforme, dejando espacios iguales entre ellos */
     align-items: center;
+    /* Alinea los elementos de la lista verticalmente al centro del contenedor */
     height: 50px;
+    /* Define una altura fija de 50 píxeles para el contenedor de la lista */
     list-style: none;
+    /* Elimina los puntos o viñetas predeterminados de los elementos de la lista */
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    /* Elimina el subrayado predeterminado de los enlaces */
 }
