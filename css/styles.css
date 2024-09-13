@@ -5,14 +5,21 @@
     padding: 0;
 }
 
+body {
+    color: #fff;
+}
+
 
 /*menu de nav*/
 
 nav {
-    background-color: black;
-    text-align: center;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
     position: fixed;
+    text-align: center;
     width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 ul {
@@ -20,8 +27,10 @@ ul {
     justify-content: space-around;
     align-items: center;
     height: 50px;
+    list-style: none;
 }
 
-li a {
-    text-decoration: none
+a {
+    text-decoration: none;
+    color: inherit;
 }
