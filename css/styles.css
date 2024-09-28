@@ -9,11 +9,15 @@ body {
     color: black;
 }
 
+section {
+    padding: 100px 100px 10px 100px;
+}
+
 
 /*menu de nav*/
 
 nav {
-    background-color: #000;
+    background-color: #1c233a;
     /* Establece el color de fondo a negro */
     border-bottom: 1px solid #fff;
     /* Añade un borde inferior blanco de 1px */
@@ -53,4 +57,12 @@ a {
     text-decoration: none;
     /* Elimina el subrayado predeterminado de los enlaces */
     color: #fff;
+}
+
+
+/*Inicio*/
+
+#inicio {
+    background-image: url(/img/inicio.png);
+    background-size: cover;
 }
