@@ -11,7 +11,8 @@ body {
 
 section {
     padding: 50px 10px;
-    /* Ajuste el padding para pantallas pequeñas */
+    /* Ajuste el padding para pantallas pequeñas ya que al tener
+    demasiado, al hacerse pequeña descuadraba toda la página*/
 }
 
 @media (min-width: 768px) {
