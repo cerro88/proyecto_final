@@ -87,13 +87,16 @@ a {
 #sobremi {
     background-color: #cfb2af;
     border-bottom: 1px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 #sobremi h2 {
-    padding: 20px 0;
+    padding: 0 0 10px;
 }
 
 #imgsobremi img {
+    margin-top: 3rem;
     width: 100%;
     max-width: 20rem;
     height: auto;
