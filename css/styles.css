@@ -10,7 +10,15 @@ body {
 }
 
 section {
-    padding: 50px 100px 10px 100px;
+    padding: 50px 10px;
+    /* Ajuste el padding para pantallas pequeñas */
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 50px 100px;
+        /* Para pantallas más grandes */
+    }
 }
 
 
@@ -76,12 +84,42 @@ a {
 /*Sobre mi*/
 
 #sobremi {
-    background-color: #93a7b5;
+    background-color: #cfb2af;
+    border-bottom: 1px solid #fff;
+}
+
+#sobremi h2 {
+    padding: 20px 0;
 }
 
 #imgsobremi img {
-    width: 16rem;
-    height: 15rem;
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
     border: 2px solid #000;
     border-radius: 10px 0 10px 0;
+}
+
+
+/*Mi arte*/
+
+#arte {
+    background-color: #adb5bb;
+    border-bottom: 1px solid #fff;
+}
+
+#arte h2 {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#arte .contenedor_arte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Hacer columnas responsivas */
+    justify-content: center;
+    column-gap: 100px;
+    /* Espacio entre las columnas */
+    row-gap: 50px;
+    /* Espacio entre las filas */
 }
