@@ -7,6 +7,7 @@
 
 body {
     color: black;
+    background-color:  #cfb2af;;
 }
 
 section {
@@ -130,6 +131,13 @@ a {
     gap: 5rem;
 }
 
+.icons a{
+    color: #000;
+}
+
+.icons a:hover{
+    color: #fff;
+}
 
 
 /*Mi arte*/
@@ -180,4 +188,46 @@ a {
 .video a img{
     border-radius: 10px;
 
+}
+
+
+/*Contacto*/
+
+
+.contact{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+form button{
+    margin-top: 2rem;
+}
+
+button{
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*Pie de página*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c233a;
+    height: 50px;
+}
+
+footer p{
+    margin-top: 15px;
+    color: #fff;
 }

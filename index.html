@@ -32,9 +32,6 @@
             <h3>Fotógrafo</h3>
             <h3>Pintor</h3>
         </div>
-        <div class="icons">
-            <!--insertear iconos de font google-->
-        </div>
     </section>
 
     <!--Sección sobre mi-->
@@ -43,10 +40,10 @@
        <div class="foto-container">
         <div id="imgsobremi"><img src="/img/foto-perfil.png" alt="foto perfil" height="250px"></div>
         <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-wordpress-simple"></i>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://wordpress.com/es/ppc/lohp-campaign/?utm_source=google&utm_campaign=google_search_wpcom_acquisition_brand_es_es&utm_medium=paid_search&keyword=wordpress&creative=674650391164&campaignid=20575508521&adgroupid=156231933520&matchtype=e&device=c&network=g&targetid=kwd-313411415&utm_content=&gad_source=1&gclid=Cj0KCQjwmt24BhDPARIsAJFYKk2d03k9X707a7EDsOaOq4gwF-Tmh7lnI4Vm19sOsGyUJ8IupGN9Wy0aAtjlEALw_wcB"><i class="fa-brands fa-wordpress-simple"></i></a>
         </div>
        </div>
        <!--Texto sobre mi-->
@@ -112,13 +109,44 @@
 
     <!--Sección Contactame-->
     <section class="contact">
-        
+        <div class="contacto-titulo">
+            <h2>Contáctame</h2>
+        </div>
+        <form action="">
+            <div class="item">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" minlength="3" maxlength="15" size="24" required>
+            </div>
+    
+            <div class="item">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" minlength="9" maxlength="9" pattern="[0-9]{9}" size="24" required>
+            </div>
+    
+            <div class="item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" minlength="13" maxlength="30" size="24" required>
+            </div>
+    
+            <div class="item">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     </section>
    </main>
 
    <!--Pie de página-->
    <footer>
+        <img src="img/logo-empre.png" alt="logo" width="50px">
+        <p>&copy; 2024 Cerro. Todos los derechos reservados.</p>
+        <p>Sitio web desarrollado por Cerro.</p>
+        <p>Política de privacidad</a></p>
+    </footer>
 
    </footer>
 
