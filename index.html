@@ -15,16 +15,18 @@
         <nav>
             <!--Lista desordenada para hacer el menú-->
             <ul>
-                <li class="img_log"><img src="/img/logo_negro_rect.png" width="150" alt=""></li>
+                <li class="img_log"><img src="/img/logo-removebg-preview.png" width="50" alt=""></li>
                 <li class="items-nav"><a href="#sobremi">Sobre mi</a></li>
-                <li class="items-nav"><a href="#arte">Mi Arte</a></li>
-                <li class="items-nav"><a href="#viajes">Viajes</a></li>
+                <li class="items-nav"><a href="#arte">Mi Arte / Viajes</a></li>
+               
                 <li class="items-nav"><a href="#contactame">Contactame</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inicio">
+   <main>
+     <!--Sección de inicio-->
+     <section id="inicio">
         <div class="info">
             <h1>Lucien Beaulieu</h1>
             <h3>Fotógrafo</h3>
@@ -34,11 +36,22 @@
             <!--insertear iconos de font google-->
         </div>
     </section>
+
+    <!--Sección sobre mi-->
     <section id="sobremi">
         <!--Bloque Sobre mí-->
+       <div class="foto-container">
         <div id="imgsobremi"><img src="/img/foto-perfil.png" alt="foto perfil" height="250px"></div>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-wordpress-simple"></i>
+        </div>
+       </div>
+       <!--Texto sobre mi-->
         <div id="bodysobremi">
-            <h2>Sobre mí</h2>
+            <h1>Sobre mí</h1>
             <p>Mi nombre és <strong>Lucien Beaulieu. </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, ut</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque necessitatibus voluptatem aspernatur ipsam totam expedita esse nobis ducimus asperiores maxime nostrum nemo reprehenderit, eum, accusantium nesciunt cumque officiis mollitia nam.
                 Ut, quam consequuntur fuga saepe vitae totam dignissimos ullam fugit unde maxime odit eligendi quos voluptatem molestiae sed voluptatibus quia delectus neque, sunt vel esse velit! Ratione tempora pariatur est. Ducimus voluptate quidem,
@@ -47,41 +60,72 @@
             <div class="masinfo"><button type="button">Más info</button></div>
         </div>
     </section>
+
+
+    <!--Sección mi arte-->
     <section id="arte">
-        <h2>Mi Arte</h2>
+        <h2>Mi Arte / Viajes</h2>
+        <p>Descubre mis obras de arte y fotografías capturadas alrededor del mundo, cada una inspirada por la belleza y diversidad de diferentes culturas.</p>
+       
+
         <div class="contenedor_arte">
-            <div>
-                <h3>Paisajismo</h3>
-                <span class="material-symbols-outlined">
-                    nature
-                    </span>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="video-container">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=AAob-Qde_2o"><img src="img/paris_1.png" alt="imagen_del_video" width="150px"></a> 
+                </div>
+                <div class="text">
+                    <p>Paris</p>
+                    <i class="fa-solid fa-photo-film"></i>
+                </div>
             </div>
-            <div>
-                <h3>Óleo</h3>
-                <span class="material-symbols-outlined">
-                    palette
-                    </span>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <div class="video-container">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=O854bGY_XAk"><img src="img/india-1.png" alt="imagen_del_video" width="150px"></a> 
+                </div>
+                <div class="text">
+                    <p>India</p>
+                    <i class="fa-solid fa-photo-film"></i>
+                </div>
             </div>
-            <div>
-                <h3>Abstracto</h3>
-                <span class="material-symbols-outlined">
-                    draw_abstract
-                    </span>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <div class="video-container">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=ZkyFNAhubNs"><img src="img/estambul_1.png" alt="imagen_del_video" width="150px"></a> 
+                </div>
+                <div class="text">
+                    <p>Estambul</p>
+                    <i class="fa-solid fa-photo-film"></i>
+                </div>
             </div>
-            <div>
-                <h3>Fotográfia</h3>
-                <span class="material-symbols-outlined">
-                    photo_camera
-                    </span>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+            <div class="video-container">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=FKzEqJmHGus"><img src="img/africa3.png" alt="imagen_del_video" width="150px"></a> 
+                </div>
+                <div class="text">
+                    <p>África</p>
+                    <i class="fa-solid fa-photo-film"></i>
+                </div>
             </div>
+            
         </div>
     </section>
 
 
+    <!--Sección Contactame-->
+    <section class="contact">
+        
+
+    </section>
+   </main>
+
+   <!--Pie de página-->
+   <footer>
+    
+   </footer>
+
+    <script src="https://kit.fontawesome.com/ab9edaf310.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
