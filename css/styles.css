@@ -10,6 +10,10 @@ body {
     color: black;
     background-color:  #cfb2af;
     /* Establece el color de texto a negro y un color de fondo personalizado */
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    
+    /*Uso de la fuente Playwrite England SemiJoined de fonts google*/
 }
 
 section {
