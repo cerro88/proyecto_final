@@ -1,94 +1,84 @@
-/*genericos*/
-
 * {
     margin: 0;
     padding: 0;
+    /* Elimina el margen y padding predeterminados de todos los elementos */
 }
 
 body {
+    padding-bottom: 50px;
+    /* Añade espacio al final del contenido para que no se superponga con el footer */
     color: black;
-    background-color:  #cfb2af;;
+    background-color:  #cfb2af;
+    /* Establece el color de texto a negro y un color de fondo personalizado */
 }
 
 section {
     padding: 50px 10px;
-    /* Ajuste el padding para pantallas pequeñas ya que al tener
-    demasiado, al hacerse pequeña descuadraba toda la página*/
+    /* Ajusta el padding para evitar que el contenido se vea comprimido en pantallas pequeñas */
     text-align: justify;
+    /* Justifica el texto para que esté alineado a ambos lados */
 }
 
 @media (min-width: 768px) {
     section {
         padding: 50px 100px;
-        /* Para pantallas más grandes */
+        /* Aumenta el padding en pantallas más grandes para mejorar la legibilidad */
     }
 }
 
-h2{
+h2 {
     text-align: center;
     padding: 1rem;
+    /* Centra el texto del título y le añade padding */
 }
 
-/*menu de nav*/
+/* Menú de navegación (nav) */
 
 nav {
     background-color: #1c233a;
-    /* Establece el color de fondo a negro */
+    /* Establece un color de fondo oscuro */
     border-bottom: 1px solid #fff;
-    /* Añade un borde inferior blanco de 1px */
+    /* Añade un borde inferior blanco para dividir visualmente el nav del resto del contenido */
     position: fixed;
-    /* Fija la barra de navegación en la parte superior de la ventana */
+    /* Hace que el menú nav sea fijo en la parte superior de la pantalla */
     text-align: center;
-    /* Centra el texto dentro de la barra de navegación */
     width: 100%;
-    /* Hace que la barra de navegación ocupe el 100% del ancho */
     top: 0;
-    /* Posiciona la barra en la parte superior de la ventana */
     z-index: 1000;
-    /* Establece la prioridad de la barra sobre otros elementos, asegurando que se superponga */
-    /*Significa que este elemento tiene una prioridad muy alta, 
-    por lo que se mostrará por encima de cualquier otro elemento 
-    que tenga un z-index inferior a 1000.
-    Es útil para cosas como menús de navegación fijos,
-    para que siempre queden visibles por encima del contenido de
-    la página, incluso cuando el usuario haga scroll o si hay 
-    otros elementos flotando en la página.*/
+    /* Asegura que el menú esté siempre sobre otros elementos */
 }
 
 ul {
     display: flex;
-    /* Utiliza Flexbox para alinear y distribuir los elementos de la lista */
     justify-content: space-around;
-    /* Distribuye los elementos hijos de manera uniforme, dejando espacios iguales entre ellos */
     align-items: center;
-    /* Alinea los elementos de la lista verticalmente al centro del contenedor */
     height: 50px;
-    /* Define una altura fija de 50 píxeles para el contenedor de la lista */
     list-style: none;
-    /* Elimina los puntos o viñetas predeterminados de los elementos de la lista */
+    /* Elimina la viñeta de los elementos de la lista */
 }
 
 a {
     text-decoration: none;
-    /* Elimina el subrayado predeterminado de los enlaces */
     color: #fff;
+    /* Elimina el subrayado predeterminado de los enlaces y los establece en blanco */
 }
 
-
-/*Inicio*/
+/* Sección de Inicio */
 
 #inicio {
     background-image: url(/img/inicio.png);
     background-size: cover;
+    /* Establece una imagen de fondo que cubre todo el área */
     border-bottom: 1px solid #fff;
+    /* Añade un borde inferior */
 }
 
 .info {
     padding: 75px 0 20px 10px;
+    /* Añade padding al contenido en la parte superior y lateral */
 }
 
-
-/*Sobre mi*/
+/* Sobre mí */
 
 #sobremi {
     background-color: #cfb2af;
@@ -96,25 +86,27 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 10rem));
     gap: 5rem;
-    justify-content: center
+    justify-content: center;
+    /* Establece una cuadrícula adaptable con separación entre elementos y los centra */
 }
 
 #sobremi h1 {
     padding: 0 0 10px;
-    text-align: center ;
+    text-align: center;
+    /* Centra el título de la sección y le añade padding inferior */
 }
 
 #imgsobremi img {
-
     width: 100%;
     max-width: 20rem;
     height: auto;
     border: 2px solid #000;
     border-radius: 10px 0 10px 0;
     margin-top: 3rem;
+    /* Controla el tamaño de la imagen, añadiendo un borde y un margen superior */
 }
 
-.masinfo button{
+.masinfo button {
     background-color: #000;
     color: #fff;
     padding: 0.5rem;
@@ -122,112 +114,126 @@ a {
     border-radius: 1rem;
     border: 1px solid #fff;
     margin-top: 1rem;
+    /* Estiliza el botón con colores, bordes y margenes */
 }
 
-.icons{
+.icons {
     margin-top: 2rem;
     padding: 1rem;
     display: flex;
     gap: 5rem;
+    /* Crea un espacio entre los íconos */
 }
 
-.icons a{
+.icons a {
     color: #000;
+    /* Establece el color de los enlaces en los íconos */
 }
 
-.icons a:hover{
+.icons a:hover {
     color: #fff;
+    /* Cambia el color de los íconos cuando se pasa el mouse sobre ellos */
 }
 
-
-/*Mi arte*/
+/* Sección Mi arte */
 
 #arte {
     background-color: #adb5bb;
     border-bottom: 1px solid #fff;
+    /* Define un fondo claro y un borde inferior */
 }
-
 
 #arte .contenedor_arte {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Hacer columnas responsivas */
     justify-content: center;
     column-gap: 100px;
-    /* Espacio entre las columnas */
     row-gap: 50px;
-    /* Espacio entre las filas */
     border: 2px solid black;
     border-radius: 1rem;
     background-color: #d2e1ed;
+    /* Crea una cuadrícula de elementos con espacios entre filas y columnas */
 }
 
-#arte p{
+#arte p {
     text-align: center;
     padding: 1rem;
+    /* Centra el texto de los párrafos y añade padding */
 }
 
-
-.video-container{
+.video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem;
+    /* Establece el contenedor de los videos con un diseño en columna y centrado */
 }
 
-.video-container .text{
+.video-container .text {
     display: flex;
     flex-direction: row;
     gap: 5px;
     padding: 1rem;
     font-size: large;
     font-weight: bold;
+    /* Distribuye los textos de forma horizontal con separación */
 }
 
-
-.video a img{
+.video a img {
     border-radius: 10px;
-
+    /* Añade bordes redondeados a las imágenes de los videos */
 }
 
+/* Sección de contacto */
 
-/*Contacto*/
-
-
-.contact{
+#contactame {
     max-width: 300px;
     margin: 0 auto;
+    /* Centra el contenedor del formulario y establece un ancho máximo */
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    /* Coloca los elementos en columna y añade espacio entre cada grupo */
 }
 
-form button{
+form button {
     margin-top: 2rem;
+    /* Añade margen superior al botón dentro del formulario */
 }
 
-button{
+button {
     padding: 0.5rem;
     width: 8rem;
     border-radius: 1rem;
     background-color: #000;
     color: #fff;
+    /* Estiliza el botón con padding, colores y bordes redondeados */
 }
 
+/* Pie de página */
 
-/*Pie de página*/
-
-footer{
+footer {
+    position: fixed;
+    /* Fija el footer en una posición específica de la pantalla */
+    bottom: 0;
+    /* Posiciona el footer en la parte inferior */
+    left: 0;
+    width: 100%;
+    /* Hace que el footer ocupe el 100% del ancho de la pantalla */
+    background-color: #1c233a;
     display: flex;
     justify-content: space-around;
-    background-color: #1c233a;
     height: 50px;
+    z-index: 1000;
+    /* Asegura que el footer esté por encima de otros elementos */
 }
 
-footer p{
+
+footer p {
     margin-top: 15px;
     color: #fff;
+    /* Coloca el texto centrado en el pie de página y establece el color blanco */
 }
